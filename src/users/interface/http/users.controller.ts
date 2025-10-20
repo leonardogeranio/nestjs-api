@@ -1,7 +1,7 @@
 import { Body, ConflictException, Controller, HttpCode, Post } from '@nestjs/common';
-import { CreateUserUseCase } from 'src/users/application/use-cases/create-user.usecase';
+import { CreateUserUseCase } from '../../application/use-cases/create-user.usecase';
 import { CreateUserDTO } from '../dtos/create-user.dto';
-import { ConflictError } from 'src/shared/errors/conflict.error';
+import { ConflictError } from '../../../shared/errors/conflict.error';
 
 @Controller('users')
 export class UsersController {

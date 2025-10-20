@@ -1,10 +1,10 @@
 import { Inject, Injectable } from '@nestjs/common';
 import type { UserRepository } from '../ports/user-repository.interface';
 import { USER_REPOSITORY } from '../ports/user-repository.token';
-import { User } from 'src/users/domain/entities/user.entity';
-import { Email } from 'src/users/domain/value-objects/email.value-object';
-import { ConflictError } from 'src/shared/errors/conflict.error';
-import { err, ok, Result } from 'src/shared/application/result';
+import { User } from '../../../users/domain/entities/user.entity';
+import { Email } from '../../../users/domain/value-objects/email.value-object';
+import { ConflictError } from '../../../shared/errors/conflict.error';
+import { err, ok, Result } from '../../../shared/application/result';
 
 @Injectable()
 export class CreateUserUseCase {
